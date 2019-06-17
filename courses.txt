@@ -1,0 +1,50 @@
+2.1	Logique linéaire et paradigmes logiques du calcul 	6	1
+2.2	Modèles des langages de programmation: domaines, catégories, jeux 	6	2
+2.3.1	Concurrence 	3	2
+2.3.2 (S)	Fondements de la confidentialité des données	3	2
+2.4	Programmation fonctionnelle et systèmes de types 	6	3
+2.5.1 (S)	Démonstration automatique 	3	3
+2.6	Interprétation abstraite: application à la vérification et à l'analyse statique 	6	1
+2.7.1	Fondements des systèmes de preuves 	3	3
+2.7.2	Assistants de preuves 	3	3
+2.8.1	Théorie non-séquentielle des systèmes distribués 	3	1
+2.8.2	Fondements des systèmes temps-réel et hybrides 	3	1
+2.9.1	Beaux préordres et algorithmes 	3	?
+2.9.2	Vérification algorithmique des programmes	3	2
+2.10	Aspects algorithmiques de la combinatoire 	6	4
+2.11 (S)	Complexité randomisée (long) 	6	?
+2.11.1	Algorithmes d’approximation et Algorithmique moléculaire 	3	?
+2.11.2 (S)	Complexité randomisée (court) 	3	?
+2.12.1	Techniques en cryptographie et cryptoanalyse 	3	?
+2.12.2	Algorithmes arithmétiques pour la cryptologie 	3	1
+2.13.1	Systèmes polynomiaux, calcul formel et applications 	3	1
+2.13.2	Codes correcteurs d'erreurs et applications à la cryptographie 	3	1
+2.14.1	Analyse géométrique des données 	3	?
+2.15	Analyse d'algorithmes 	6	3
+2.16	Modélisation par automates finis 	6	1
+2.17.1	Fondements sur la modélisation des réseaux 	3	1
+2.18.1	Algorithmique distribuée pour les réseaux 	3	1
+2.18.2	Algorithmique distribuée avec mémoire partagée 	3	1
+2.19	Programmation biochimique 	3	1
+2.20.1	Techniques de théorie des jeux en informatique 	3	3
+2.20.2	Fondations mathématiques de la théorie des automates 	3	1
+2.22	Algorithmes efficaces en calcul formel 	6	1
+2.23.1	Programmation des systèmes synchrones 	3	1
+2.24.1	Optimisation 	3	4
+2.24.2	Résolution de problèmes d'optimisation avec heuristiques de recherche 	3	4
+2.26.1 (S)	Logique, complexité descriptive et théorie des bases de données 	3	1
+2.26.2	Gestion de données du web 	3	1
+2.27.1	Structures informatiques et logiques pour la modélisation linguistique 	3	1
+2.29.1	Algorithmique des graphes 	3	5
+2.29.2	Fouille de graphes 	3	3
+2.30	Protocoles cryptographiques : preuves formelles et calculatoires 	6	1
+2.33.1 (S)	Théorie des calculs 	3	1
+2.33.2 (S)	Complexité de circuits 	3	1
+2.33.3	Calculs sur les réels: modèles, calculabilité, complexité 	3	1
+2.34.1	Informatique quantique 	3	2
+2.34.2	Informatique quantique et cryptographie 	3	1
+2.35.1 (S)	Programmation par contraintes 	3	4
+2.36.1	Preuve de programmes	3	1
+2.37.1	Sémantique, langages et algorithmes pour la programmation multicore	3	1
+2.38.1	Algorithmique et combinatoire des graphes géométriques 	3	3
+2.39	Informatique graphique et visualisation scientifique 	3	1
