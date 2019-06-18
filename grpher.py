@@ -11,9 +11,11 @@ def remove_comments(s):
 
 
 def test_useless(c):
-    return c.isspace() or c in ",.()\"-<>"
+    return c.isspace() or c in ",.()\"<>"
 
-def find_inside(needle, haystack):
+def find_inside(needle, ny, haystack):
+    if haystack.find(ny) > -1:
+        return True
     for x in range(len(haystack) - len(needle)):
         b = True
         for y in range(len(needle)):
@@ -25,15 +27,21 @@ def find_inside(needle, haystack):
     return False
 
 def main():
-    f = open('ind.txt')
-    tab = f.read().split('\n')
-    tab.pop()
+    f = open('courses.txt')
+    ttab = f.read().split('\n')
+    ttab.pop()
+    name = [(t.split('\t'))[1].strip() for t in ttab]
+    tab = [(t.split('\t'))[0].strip() for t in ttab]
+    #tab = f.read().split('\n')
+    #tab.pop()
     se = set()
-    for x in tab:
+    for xi in range(len(tab)):
+        x = tab[xi]
         rr = requests.get('http://wikimpri.dptinfo.ens-cachan.fr/doku.php?id=cours:c-' + x.replace('.','-'), verify=False)
         r = remove_comments(rr.text)
-        for y in tab:
-            if find_inside(y,r) or find_inside(y.replace('.','-'),r):
+        for yi in range(len(tab)):
+            y = tab[yi]
+            if find_inside(y,name[yi],r) or find_inside(y.replace('.','-'),name[yi],r):
                 se.add((min(x,y),max(x,y)))
     for (x,y) in se:
         if x != y:
