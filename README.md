@@ -5,7 +5,9 @@ A bunch of tools to help students choose their courses for MPRI.
 
 First, clone this repo:
 
+```
 git clone https://github.com/gaubian/MPRIChoiceHelper.git
+```
 
 And then, configure it:
 
