@@ -1,4 +1,5 @@
 def main():
+    to_print_on = open('grph.dot','w+')
     f = open('edges.txt')
     tab = f.read().split('\n')
     tab.pop()
@@ -9,11 +10,9 @@ def main():
         vertices.add(s)
         vertices.add(t)
         edges.add((s,t))
-    print('graph G {')
+    to_print_on.write('graph G {\n')
     for u in vertices:
-        print('\t"' + u + '";')
+        to_print_on.write('\t"' + u + '";\n')
     for (u,v) in edges:
-        print('\t"' + u + '" -- "' + v + '";')
-    print('}')
-
-main()
+        to_print_on.write('\t"' + u + '" -- "' + v + '";\n')
+    to_print_on.write('}\n')

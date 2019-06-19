@@ -27,13 +27,12 @@ def find_inside(needle, ny, haystack):
     return False
 
 def main():
+    to_print_on = open('pre_edges.txt', 'w+')
     f = open('courses.txt')
     ttab = f.read().split('\n')
     ttab.pop()
     name = [(t.split('\t'))[1].strip() for t in ttab]
     tab = [(t.split('\t'))[0].strip() for t in ttab]
-    #tab = f.read().split('\n')
-    #tab.pop()
     se = set()
     for xi in range(len(tab)):
         x = tab[xi]
@@ -45,6 +44,4 @@ def main():
                 se.add((min(x,y),max(x,y)))
     for (x,y) in se:
         if x != y:
-            print(x + ' ' + y)
-
-main()
+            to_print_on.write(x + ' ' + y + '\n')
