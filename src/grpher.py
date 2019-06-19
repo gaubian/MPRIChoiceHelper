@@ -27,8 +27,8 @@ def find_inside(needle, ny, haystack):
     return False
 
 def main():
-    to_print_on = open('pre_edges.txt', 'w+')
-    f = open('courses.txt')
+    to_print_on = open('output/pre_edges.txt', 'w+')
+    f = open('input/courses.txt')
     ttab = f.read().split('\n')
     ttab.pop()
     name = [(t.split('\t'))[1].strip() for t in ttab]
@@ -45,3 +45,4 @@ def main():
     for (x,y) in se:
         if x != y:
             to_print_on.write(x + ' ' + y + '\n')
+    to_print_on.flush()

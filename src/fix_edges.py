@@ -5,9 +5,9 @@ def parse(filename):
     return [x.split() for x in tab]
 
 def main():
-    f = open('edges.txt','w+')
-    edges = parse("pre_edges.txt")
-    to_mod = parse("to_modify.txt")
+    f = open('output/edges.txt','w+')
+    edges = parse("output/pre_edges.txt")
+    to_mod = parse("input/to_modify.txt")
     to_add = set()
     to_rem = set()
     for [sg, u, v] in to_mod:
@@ -18,3 +18,4 @@ def main():
     ans = (to_add | set([(u,v) for [u,v] in edges])) - to_rem
     for (x,y) in ans:
         f.write(x + ' ' + y + '\n')
+    f.flush()

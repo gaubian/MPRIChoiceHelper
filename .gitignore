@@ -1,5 +1,2 @@
-*.out
-*.dot
-*.jpg
-ind.txt
-*edges.txt
+output/*
+__pycache__

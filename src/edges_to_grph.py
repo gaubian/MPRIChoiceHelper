@@ -1,6 +1,6 @@
 def main():
-    to_print_on = open('grph.dot','w+')
-    f = open('edges.txt')
+    to_print_on = open('output/grph.dot','w+')
+    f = open('output/edges.txt')
     tab = f.read().split('\n')
     tab.pop()
     edges = set()
@@ -16,3 +16,4 @@ def main():
     for (u,v) in edges:
         to_print_on.write('\t"' + u + '" -- "' + v + '";\n')
     to_print_on.write('}\n')
+    to_print_on.flush()
