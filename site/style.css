@@ -2,11 +2,8 @@ selectable-row[isselected] {
     background-color: green;
 }
 
-selectable-row {
-    font-size: 10px;
-}
-
 li {
+    font-size: 10px;
     height: 10px;
 }
 
@@ -16,4 +13,14 @@ li {
 
 .column {
   flex: 50%;
+}
+
+#firstcell {
+  width: 8%;
+  font-weight: bold;
+}
+
+#secondcell {
+  width: 8%;
+  font-weight: 100;
 }
