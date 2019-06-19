@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+<meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
 <body>
-	<h1>My First Heading</h1>
-	<p>My first paragraph.</p>
-	<ul id="table">
-	</ul>
+    <div class="row">
+	<div class="column">
+	    <ul id="table">
+	    </ul>
 
-	<template id="row">
-	    <selectable-row>abab</selectable-row>
-	</template>
-
+	    <template id="row">
+	        <selectable-row>abab[[text]]</selectable-row>
+	    </template>
+	</div>
+	<div class="column">
+	    right column
+	</div>
+    </div>
 </body>
-<script type="module" src="script.js"></script>
+<script src="../output/script.js"></script>
 </html>

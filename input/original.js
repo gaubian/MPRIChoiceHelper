@@ -1,4 +1,4 @@
-class SelectableRow extends HTMLElement {
+class SelectableRow extends HTMLElement {	
     get isselected() {
 	return this.hasAttribute('isselected');
     }
@@ -12,8 +12,19 @@ class SelectableRow extends HTMLElement {
 	}
     }
 
+    get index() {
+	this.getAttribute('index');
+    }
+
+    index(val) {
+	console.log(i);
+        this.setAttribute('index',val);
+	this.innerHTML = codes[i] + ' ' + names[i];
+    }
+
     constructor() {
 	super();
+	this.innerHTML = "TEST";
 
 	this.addEventListener('click', e => {
 	    this.selecter(!this.isselected);
@@ -21,21 +32,18 @@ class SelectableRow extends HTMLElement {
     }
 }
 
-const fs = require('fs') 
-  
-fs.readFile('test.txt', (err, data) => { 
-    if (err) throw err; 
-  
-    console.log(data.toString()); 
-}) 
-
 customElements.define('selectable-row', SelectableRow);
 
+const n = codes.length;
 var ref_table = document.getElementById("table");
 var template = document.querySelector("#row");
-for(var i = 0; i < 10; i++) {
+for(var i = 0; i < n; i++) {
     var clone = document.importNode(template.content, true);
     var li = document.createElement("li");
     li.appendChild(clone);
     ref_table.appendChild(li);
+}
+const tab = document.querySelectorAll('selectable-row');
+for(var i = 0; i < n; i++) {
+    tab[i].index(i);
 }

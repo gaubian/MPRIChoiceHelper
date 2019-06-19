@@ -1,3 +1,19 @@
 selectable-row[isselected] {
     background-color: green;
 }
+
+selectable-row {
+    font-size: 10px;
+}
+
+li {
+    height: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
