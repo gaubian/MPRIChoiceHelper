@@ -46,3 +46,5 @@ def main():
         if x != y:
             to_print_on.write(x + ' ' + y + '\n')
     to_print_on.flush()
+
+main()

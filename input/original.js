@@ -50,7 +50,7 @@ function updateRight() {
     var ects = 0;
     for(var i = 0; i < n; ++i) {
 	if(areselected[i]) {
-	    ects += 12 - 3 * codes[i].split('.').length;
+	    ects += nb_ects[i];
 	}
     }
     ref_ects.innerHTML = "Nombre d'ECTS : " +  ects;
